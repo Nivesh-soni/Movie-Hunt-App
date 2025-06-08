@@ -17,11 +17,19 @@ function App() {
   const API_URl = "https://www.omdbapi.com/?apikey=d8dd9b1a"
 
   const fetchApi = async (title) => {
-    let req = await fetch(`${API_URl}&s=${title}`)
-    let res = await req.json()
+     try {
+    let req = await fetch(`${API_URl}&s=${title}`);
+    let res = await req.json();
 
-    console.log(res)
-    setMovie(res.Search)
+    if (res.Response === "True") {
+      setMovie(res.Search);
+    } else {
+      setMovie([]); // Clear list if nothing found
+    }
+  } catch (error) {
+    console.error("API Error:", error);
+    setMovie([]);
+  }
   }
   useEffect(() => {
     fetchApi("Alice")
