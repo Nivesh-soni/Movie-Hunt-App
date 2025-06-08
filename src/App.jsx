@@ -60,14 +60,12 @@ function App() {
   const handleType = (data) => {
     if (data === 'movie' || data === 'series') {
       const filtered = Movie.filter(item => item.Type === data)
-      fetchApi(filtered)
       setfiltered(filtered)
       setMovie([])
     }
     else if(data === 'All')
     {
       setfiltered([])
-      fetchApi(filtered)
     }
 
     else {
