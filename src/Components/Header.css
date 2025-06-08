@@ -1,0 +1,19 @@
+.gradient {
+    display: inline-block;
+    background-image:
+        linear-gradient(320deg,
+            hsl(64deg 100% 51%) 0%,
+            hsl(32deg 97% 51%) 29%,
+            hsl(12deg 100% 51%) 43%,
+            hsl(337deg 100% 50%) 57%,
+            hsl(314deg 100% 46%) 71%,
+            hsl(267deg 100% 50%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.stroked-text {
+  -webkit-text-stroke: 1.5px black;
+}

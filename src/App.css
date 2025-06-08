@@ -1,0 +1,34 @@
+/* App.css */
+
+body.light {
+  background-color: #f1f1f1;
+  color: #121212;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Optional: input and icons */
+input {
+  background: transparent;
+  color: inherit;
+}
+
+i {
+  color: inherit;
+}
+
+/* Light theme */
+body.light input::placeholder {
+  color: #555;
+}
+
+/* Dark theme */
+body.dark input::placeholder {
+  color: #aaa;
+}
+
