@@ -67,7 +67,7 @@ function App() {
     else if(data === 'All')
     {
       setfiltered([])
-      fetchApi(fixMovie)
+      fetchApi(filtered)
     }
 
     else {
