@@ -61,7 +61,6 @@ function App() {
     if (data === 'movie' || data === 'series') {
       const filtered = Movie.filter(item => item.Type === data)
       setfiltered(filtered)
-      setMovie([])
     }
     else if(data === 'All')
     {
