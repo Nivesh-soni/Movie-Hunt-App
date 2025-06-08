@@ -14,7 +14,7 @@ function App() {
 
   const Types = ['movie', 'series']
 
-  const API_URl = "http://www.omdbapi.com/?apikey=d8dd9b1a"
+  const API_URl = "https://www.omdbapi.com/?apikey=d8dd9b1a"
 
   const fetchApi = async (title) => {
     let req = await fetch(`${API_URl}&s=${title}`)
